@@ -1,0 +1,29 @@
+<h2>List of Celebs</h2>
+
+<div>
+    {{!-- for each celeb in array --}}
+    {{#each listOfCelebs}}
+
+    {{!-- create link to that celebs detail page using thier id property --}}
+    <a href="/celebrities/details/{{this._id}}">
+        <h3>
+            {{this.name}}
+        </h3>
+    </a>
+
+    {{#if this.owned}}
+
+    <a href="/celebrities/edit/{{this._id}}">Edit This Celebrity</a>
+
+    <form action="/celebrities/{{this._id}}/destroy" method="POST">
+        <button>Delete Celeb</button>
+    </form>
+
+    {{/if}}
+
+
+    {{/each}}
+
+    
+
+</div>

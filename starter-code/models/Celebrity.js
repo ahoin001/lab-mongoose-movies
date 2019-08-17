@@ -8,5 +8,5 @@ const celebSchema = new Schema({
     creator: { type: Schema.Types.ObjectId, ref: 'User' } //Creates document relationship between celebrity and user
 })
 
-const Celebrity = mongoose.model("Celebrity",celebSchema);
-module.exports = Celebrity;
+const CelebrityModel = mongoose.model("Celebrity",celebSchema);
+module.exports = CelebrityModel;
