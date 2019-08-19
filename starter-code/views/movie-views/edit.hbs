@@ -1,0 +1,42 @@
+
+<h2>Edit {{theMovie.name}}</h2>
+
+<form action="/movies/update/{{theMovie._id}}" method="POST">
+
+    <div>
+        <label>Title</label>
+        <input type="text" name="name" value="{{theMovie.title}}">
+    </div>
+
+        <div>
+        <label>Director</label>
+        <input type="text" name="occupation" value="{{theMovie.director}}">
+        </div>
+
+        <div>
+        <label>Image</label>
+        <input type="text" name="catchphrase" value="{{theMovie.image}}">
+        </div>
+
+
+
+        {{#each celebs}}
+        {{#if this.included}}
+         <div>
+        <input style="margin: 10px" type="checkbox" value="{{this._id}}" name="cast" checked="checked">
+        {{this.name}}
+        </div>
+
+        {{else}}
+
+        <div>
+        <input style="margin: 10px" type="checkbox" value="{{this._id}}" name="cast">
+        {{this.name}}
+        </div>
+        {{/if}}
+        {{/each}}
+
+
+
+        <button>Save</button>
+</form>

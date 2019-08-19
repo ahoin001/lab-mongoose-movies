@@ -1,15 +1,12 @@
 body {
   padding: 0;
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
 
-
-.card{
+.card {
   display: flex;
   width: 70%;
   align-items: center;
@@ -18,40 +15,32 @@ a {
   border: 1px solid black;
   border-radius: 4px;
   padding: 20px;
-  text-align: center;
-}
+  text-align: center; }
 
-nav{
+nav {
   border-bottom: 1px solid black;
   width: 100%;
   padding: 20px;
-  text-align: center;
+  text-align: center; }
 
-}
-
-nav form{
+nav form {
   display: inline;
   margin: 5px;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 5px;
-}
+  padding: 5px; }
 
-nav form button{
+nav form button {
   outline: none !important;
   border: none !important;
   color: blue;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
-nav a{
+nav a {
   margin: 1%;
   text-decoration: none;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 5px;
-}
+  padding: 5px; }
 
-
-
-
+/*# sourceMappingURL=style.css.map */
